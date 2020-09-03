@@ -7,9 +7,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   line-height: 1.6;
   margin: 0;
+  background-color: slategray;
 
 }
 
@@ -59,6 +60,7 @@ form {
 
 .contact {
   text-align: left;
+  font-weight: bold;
 }
 
 
@@ -78,7 +80,10 @@ p {
   text-align: left;
   color: rgb(182, 187, 186);
   font-size: .95em;
+  color: black;
 }
+
+
 
 hr {
   border: 0;
@@ -91,6 +96,7 @@ hr {
 
 .newsletter {
   text-align: left;
+  font-weight: bold;
 }
 
 input[type="text"],
