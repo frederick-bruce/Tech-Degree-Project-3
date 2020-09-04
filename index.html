@@ -6,15 +6,18 @@
   <title>Online Registration Form</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flexbox.css">
 </head>
 
 <body>
+
+  <header>
+    <h1>The Code Review</h1>
+  </header>
   
 <form action="index.html" method="post">
 
 <div class="top">
-  <h2 class="sign">Signup for our newsletter</h2>
+  <h2 class="sign">Sign up for our newsletter</h2>
   <p class="latest">Get the latest news on how your code is doing right in your inbox</p>
 </div>
 
@@ -29,34 +32,35 @@
 
   <div class="flex">
     <label for="name">Full Name</label>
-    <input type="text" id="name" name="full_name" placeholder="Required">
+    <input type="text" id="name" name="full_name" placeholder="Required" required>
   </div>
 
   <div class="flex">
     <label for="mail">Email Address</label>
-    <input type="email" id="mail" name="user_email" placeholder="Required">
+    <input type="email" id="mail" name="user_email" placeholder="Required" required>
   </div>
 
   <div class="flex">
     <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="user_phone_number">
+    <input type="tel" id="phone" placeholder="Phone Number" name="user_phone_number">
   </div>
 
   <div class="flex">
     <label for="address">Street Address</label>
-    <input type="text" id="address" name="user_address">
+    <input type="text" id="address" placeholder="Street Address" placeholder="Required" name="user_address">
   </div>
 
   <div class="flex">
     <label for="city">City</label>
-    <input type="text" id="city" name="user_city">
+    <input type="text" id="city" placeholder="City" name="user_city">
   </div>
 
 <div class="flex">
   <label for="state">State</label>
   <select id="state" name="state">
+
   <option value="">Choose State</option>
-  </option><option value="Alabama">Alabama</option>
+  <option value="Alabama">Alabama</option>
   <option value="Alaska">Alaska</option>
   <option value="Arizona">Arizona</option>
   <option value="Arkansas">Arkansas</option>
@@ -110,13 +114,13 @@
   <option value="Washington">Washington</option>
   <option value="West Virginia">West Virginia</option>
   <option value="Wisconsin">Wisconsin</option>
-  <option value="Wyoming">Wyoming</option></select>
-</optgroup>
+  <option value="Wyoming">Wyoming</option>
 </select>
+
 </div>
 <div class="flex">
   <label for="zip">Zip Code</label>
-  <input type="number" id="zip" name="user_zip_code">
+  <input type="number" id="zip" placeholder="Zip Code" name="user_zip_code">
 </div>
 
   </fieldset>
@@ -126,7 +130,7 @@
 <fieldset>
   <legend class="newsletter">Newsletter</legend>
 
-  <p>Select the newsletter you would like to recieve</p> <br>
+  <p class="newsletter-text">Select the newsletter you would like to recieve</p> <br>
 
   <div class="check">
     <input type="checkbox" id="html_news" value="interest_html" name="user_interest">
@@ -147,7 +151,7 @@
   <input type="radio" id="plain_text" value="plain_text" name="user_format">
   <label for="plain_text" class="news">Plain text</label> <br>
 
-  <p>Other topics you'd like to hear about</p> <br>
+  <label for="topics" class="form-description">Other topics you'd like to hear about</label>
   <textarea name="topics" id="topics" cols="30" rows="5"></textarea> <br>
 
   <button type="submit">Sign Up</button>
